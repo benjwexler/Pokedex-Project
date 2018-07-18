@@ -125,8 +125,28 @@ $backgroundUrl: "https://stmed.net/sites/default/files/white-wallpapers-25354-25
 }
 
 #abilitiesContainer {
-    @include flexContainer(40%, 100%, 1px solid green, row);
+    @include flexContainer(40%, 100%, 1px solid green, column);
     font-family: Pokemon Solid;
+    display: none;
+}
+
+
+#abilitiesStaticText{
+    @include flexContainer(15%, 100%, 1px solid green, row);
+    text-align: center;
+    // justify-content: center;
+    // font-family: Pokemon Hollow;
+    background-color: yellow; 
+}
+
+#abilitiesDynamicTextContainer{
+    @include flexContainer(85%, 100%, 1px solid green, row);
+}
+
+#listOfAbilities {
+    @include flexContainer(80%, 100%, 1px solid red, row);
+    font-size: 14px;
+    margin-top: 20px;
 }
 
 #hpParent {

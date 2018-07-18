@@ -19,7 +19,7 @@ let hpNumber = document.getElementById("hpNumber");
 let attackNumber = document.getElementById("attackNumber");
 let defenseNumber = document.getElementById("defenseNumber");
 let name = document.getElementById("name");
-// let talents = document.getElementById("arrayOfSkills");
+let talents = document.getElementById("listOfAbilities");
 let image= document.getElementById("image");
 
 class Pokemon {
@@ -115,7 +115,7 @@ function changePoke(link) {
         // name.innerText=ben.get(nameOfPokemon).name;
 
 
-        // talents.innerText=(ben.get(nameOfPokemon).abilities).toString()
+        talents.innerText=(ben.get(nameOfPokemon).abilities).toString()
         // talents.innerText="blah"
 
         let hpBar = document.getElementById("hpParent");
@@ -173,7 +173,7 @@ function slideNext(){
     hpNumber.innerText=ben.all()[i].hp;
     attackNumber.innerText=ben.all()[i].attack;
     defenseNumber.innerText=ben.all()[i].defense;
-    // talents.innerText = ((ben.all()[i].abilities).join(", "))
+    talents.innerText = ((ben.all()[i].abilities).join(", "))
 
     // console.log((ben.all()[i].abilities).toString())
     
@@ -218,7 +218,7 @@ function slidePrev(){
     attackNumber.innerText=ben.all()[i].attack;
     defenseNumber.innerText=ben.all()[i].defense;
     // let talents = document.getElementById("arrayOfSkills");
-    // talents.innerText = (ben.all()[i].abilities).toString()
+    talents.innerText = (ben.all()[i].abilities).toString()
 
     let hpBar = document.getElementById("hpParent");
 let hpNumberText = hpNumber.innerText
@@ -237,5 +237,9 @@ let attackBar = document.getElementById("attackParent");
 // let hpBar = document.getElementById("hpParent");
 // let hpNumberText = hpNumber.innerText
 // hpBar.style.width = ((hpNumberText/255)*100) + "%"
+let abilitiesContainer = document.getElementById("abilitiesContainer");
 
+function displayAbilities() {
+    abilitiesContainer .style.display="inline";
+}
 
