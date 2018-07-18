@@ -26,6 +26,13 @@ $pokeBlack: #222224;
     // @include flexContainer(600px, 1200px, 0px solid green, row);
     margin: 80px auto auto auto;
     justify-content: center;
+    // overflow: hidden;
+}
+
+@media only screen and (max-width: 1000px) {
+    #boss {
+        overflow: hidden;
+    }
 }
 
 #controllerLeft{
@@ -104,7 +111,7 @@ $pokeBlack: #222224;
 }
 
 #hpParent {
-    @include flexContainer(25%, 40%, 1px solid green, row);
+    @include flexContainer(25%, 00%, 1px solid green, row);
     background-color: yellow; 
 }
 
@@ -117,7 +124,7 @@ $pokeBlack: #222224;
 }
 
 #attackParent {
-    @include flexContainer(25%, 30%, 1px solid green, row);
+    @include flexContainer(25%, 0%, 1px solid green, row);
     background-color: yellow; 
     
 }
@@ -131,7 +138,7 @@ $pokeBlack: #222224;
 }
 
 #defenseParent {
-    @include flexContainer(25%, 30%, 1px solid green, row);
+    @include flexContainer(25%, 00%, 1px solid green, row);
     background-color: yellow; 
     
 }
@@ -215,7 +222,10 @@ $pokeBlack: #222224;
     color: $pokeBlack;
     outline: none;
     display: none;
+    cursor: pointer;
 }
+
+
 
 #next{
     font-size: 200px;
@@ -227,6 +237,7 @@ $pokeBlack: #222224;
     color: $pokeBlack;
     display: none;
     outline: none;
+    cursor: pointer;
 }
 
 @keyframes spin {

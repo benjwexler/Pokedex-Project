@@ -53,7 +53,7 @@ class Trainer {
 
 let ben = new Trainer();
 
-let nameOfPokemon = "pikachu";
+let nameOfPokemon = "charizard";
 
 link = "https://pokeapi.co/api/v2/pokemon/" + nameOfPokemon;
 
@@ -142,10 +142,10 @@ nameOfPokemon = "jigglypuff"
 link = "https://pokeapi.co/api/v2/pokemon/" + nameOfPokemon;
 changePoke(link);
 
-nameOfPokemon = "charizard"
+nameOfPokemon = "pikachu"
 // link = "https://pokeapi-nycda.firebaseio.com/pokemon/59.json"
 link = "https://pokeapi.co/api/v2/pokemon/" + nameOfPokemon;
-changePoke(link);
+setTimeout(changePoke(link), 1500);
 
 setTimeout(ben.all(), 1000);
 

@@ -25,6 +25,12 @@
           justify-content: center;
 }
 
+@media only screen and (max-width: 1000px) {
+  #boss {
+    overflow: hidden;
+  }
+}
+
 #controllerLeft {
   height: 100%;
   width: 16%;
@@ -197,7 +203,7 @@
 
 #hpParent {
   height: 25%;
-  width: 40%;
+  width: 0%;
   border: 1px solid green;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -228,7 +234,7 @@
 
 #attackParent {
   height: 25%;
-  width: 30%;
+  width: 0%;
   border: 1px solid green;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -259,7 +265,7 @@
 
 #defenseParent {
   height: 25%;
-  width: 30%;
+  width: 0%;
   border: 1px solid green;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -392,6 +398,7 @@
   color: #222224;
   outline: none;
   display: none;
+  cursor: pointer;
 }
 
 #next {
@@ -404,6 +411,7 @@
   color: #222224;
   display: none;
   outline: none;
+  cursor: pointer;
 }
 
 @-webkit-keyframes spin {
