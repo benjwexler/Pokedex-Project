@@ -124,6 +124,11 @@ $backgroundUrl: "https://stmed.net/sites/default/files/white-wallpapers-25354-25
     font-family: Pokemon Solid;
 }
 
+#abilitiesContainer {
+    @include flexContainer(40%, 100%, 1px solid green, row);
+    font-family: Pokemon Solid;
+}
+
 #hpParent {
     @include flexContainer(25%, 00%, 1px solid green, row);
     background-color: yellow; 

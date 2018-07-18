@@ -201,6 +201,20 @@
   font-family: Pokemon Solid;
 }
 
+#abilitiesContainer {
+  height: 40%;
+  width: 100%;
+  border: 1px solid green;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  font-family: Pokemon Solid;
+}
+
 #hpParent {
   height: 25%;
   width: 0%;
