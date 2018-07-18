@@ -9,11 +9,23 @@ $pokeRed: #ee1515;
 $pokeGrey: #f0f0f0;
 $pokeBlack: #222224;
 
+// $backgroundUrl: "https://bestwallpapers.co/wp-content/uploads/2018/05/wallpaper-design-awards-application-for-home-singapore-designs.jpg";
 
+$backgroundUrl: "https://stmed.net/sites/default/files/white-wallpapers-25354-2505529.jpg";
 *{
     box-sizing: border-box;
     
+    
 }
+
+// body {
+//     // background: url("https://wallpaperstudio10.com/static/wpdb/wallpapers/1920x1080/169322.jpg") no-repeat center center fixed;
+//     background: url($backgroundUrl) no-repeat center center fixed;
+//     // background-size: 2000px 500px;
+    
+//     // background-image: url("https://images.unsplash.com/photo-1474540412665-1cdae210ae6b?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=eaebfb6af1f3014a7b193b43d1a96d7b&w=1000&q=80")
+    
+// }
 
 #btn {
     height: 50px;
@@ -24,6 +36,7 @@ $pokeBlack: #222224;
 #boss {
     @include flexContainer(600px, 80%, 0px solid green, row);
     // @include flexContainer(600px, 1200px, 0px solid green, row);
+    // margin: 180px auto auto auto;
     margin: 80px auto auto auto;
     justify-content: center;
     // overflow: hidden;
@@ -41,6 +54,7 @@ $pokeBlack: #222224;
     border-top-left-radius: 200px 80px;
     border-bottom-left-radius: 200px 80px;
     box-shadow: 0px -10px rgba(34, 33, 33, 0.945);
+    
 }
 
 #mainScreenParent {

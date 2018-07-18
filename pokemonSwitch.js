@@ -145,7 +145,7 @@ changePoke(link);
 nameOfPokemon = "pikachu"
 // link = "https://pokeapi-nycda.firebaseio.com/pokemon/59.json"
 link = "https://pokeapi.co/api/v2/pokemon/" + nameOfPokemon;
-setTimeout(changePoke(link), 1500);
+setTimeout(changePoke(link), 7500);
 
 setTimeout(ben.all(), 1000);
 
