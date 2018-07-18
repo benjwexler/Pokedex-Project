@@ -61,6 +61,12 @@
       -ms-flex-pack: center;
           justify-content: center;
   opacity: .9;
+  -webkit-animation-name: intro;
+          animation-name: intro;
+  -webkit-animation-delay: 0;
+          animation-delay: 0;
+  -webkit-animation-duration: 1500ms;
+          animation-duration: 1500ms;
 }
 
 #mainScreenBorder {
@@ -225,9 +231,41 @@
   height: 350px;
   border-radius: 50%;
   font-size: 20px;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, #ee1515), color-stop(50%, #f0f0f0));
+  background: linear-gradient(180deg, #ee1515 50%, #f0f0f0 50%);
+  border: 12px solid #222224;
 }
 
-@-webkit-keyframes {}
+#circle {
+  height: 25%;
+  width: 25%;
+  margin: auto;
+  background-color: #f0f0f0;
+  border-radius: 50%;
+  border: 10px solid #222224;
+}
 
-@keyframes {}
+@-webkit-keyframes intro {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: .6;
+  }
+  100% {
+    opacity: .9;
+  }
+}
+
+@keyframes intro {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: .6;
+  }
+  100% {
+    opacity: .9;
+  }
+}
 /*# sourceMappingURL=pokemonSwitch.css.map */

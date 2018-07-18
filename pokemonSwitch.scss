@@ -5,6 +5,11 @@ $joyconRed: #ff4554;
 $joyconGrey: #989898;
 $switchWhite: #ffffff;
 
+$pokeRed: #ee1515;
+$pokeGrey: #f0f0f0;
+$pokeBlack: #222224;
+
+
 *{
     box-sizing: border-box;
 }
@@ -37,6 +42,9 @@ $switchWhite: #ffffff;
     border-radius: .2%;
     justify-content: center;
     opacity: .9;
+    animation-name: intro;
+    animation-delay: 0;
+    animation-duration: 1500ms;
     
 }
 
@@ -112,8 +120,22 @@ $switchWhite: #ffffff;
     border-radius: 50%;
     // border-bottom: 10px solid black;
     font-size: 20px;
+    background: linear-gradient(180deg, $pokeRed 50%, $pokeGrey 50%);
+    border: 12px solid $pokeBlack;
 }
 
-@keyframes {
-    
+#circle {
+    height: 25%;
+    width: 25%;
+    margin: auto;
+    background-color: $pokeGrey;
+    border-radius: 50%;
+    border: 10px solid $pokeBlack;
+
+}
+
+@keyframes intro {
+    0%   {opacity: 0;}
+    50%  {opacity: .6;}
+    100% {opacity: .9;}
 }
