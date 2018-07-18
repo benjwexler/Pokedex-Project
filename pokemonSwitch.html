@@ -14,7 +14,7 @@
     <div id="boss">
         <div id="controllerLeft">
             <div id="sliderLeftContainer">
-                <button id="prev"> &#8249</button>
+                <button id="prev" onclick="slidePrev()"> &#8249</button>
 
             </div>
         </div>
@@ -34,14 +34,34 @@
                             <div class="threeCol">
                                 <div id="hpParent">
                                     <div id="hp">HP</div>
+
+                                </div>
+                                <div id="hpNumber">
+                                    80
                                 </div>
                             </div>
                             <div class="threeCol">
-                                <div id="attack">Attack</div>
+                                <div id="attackParent">
+                                    <div id="attack">Attack</div>
+
+                                </div>
+                                <div id="attackNumber">
+                                    59
+                                </div>
                             </div>
                             <div class="threeCol">
-                                <div id="defense">Defense</div>
+                                <div id="defenseParent">
+                                    <div id="defense">Defense</div>
+
+                                </div>
+                                <div id="defenseNumber">
+                                    59
+                                </div>
                             </div>
+
+                            <!-- <div class="threeCol">
+                                <div id="defense">Defense</div>
+                            </div> -->
                         </div>
                     </div>
                 </div>
@@ -49,7 +69,7 @@
         </div>
         <div id="controllerRight">
             <div id="sliderRightContainer">
-                <button id="next"> &#8250</button>
+                <button id="next" onclick="slideNext()"> &#8250</button>
 
             </div>
         </div>
@@ -57,6 +77,7 @@
     <button id="start" onclick="initiate()">
         <div id="circle"></div>
     </button>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script src="pokemonSwitch.js"></script>
 </body>
 

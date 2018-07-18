@@ -46,7 +46,7 @@
 #mainScreenParent {
   height: 100%;
   width: 68%;
-  border: 0px solid green;
+  border: 0px dashed green;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -89,7 +89,7 @@
 #screen {
   height: 90%;
   width: 88%;
-  border: 0px solid green;
+  border: 0px dashed #989898;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -105,7 +105,7 @@
 #header {
   height: 10%;
   width: 100%;
-  border: 1px solid green;
+  border: 0px solid green;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -118,7 +118,7 @@
 #name {
   height: 80%;
   width: 30%;
-  border: 1px solid green;
+  border: 0px solid green;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -130,13 +130,15 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  font-size: 22px;
+  font-size: 26px;
+  font-family: Pokemon Hollow;
+  color: #989898;
 }
 
 #imageAndSkillsContainer {
   height: 80%;
   width: 100%;
-  border: 1px solid green;
+  border: 0px solid green;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -190,11 +192,12 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  font-family: Pokemon Solid;
 }
 
 #hpParent {
   height: 25%;
-  width: 20%;
+  width: 40%;
   border: 1px solid green;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -203,6 +206,86 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  background-color: yellow;
+}
+
+#hpNumber {
+  height: 55%;
+  width: 50%;
+  border: 0px solid green;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin: auto 0 0 auto;
+  text-align: right;
+  font-size: 40px;
+  overflow: hidden;
+}
+
+#attackParent {
+  height: 25%;
+  width: 30%;
+  border: 1px solid green;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  background-color: yellow;
+}
+
+#attackNumber {
+  height: 55%;
+  width: 50%;
+  border: 0px solid green;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin: auto 0 0 auto;
+  text-align: right;
+  font-size: 40px;
+  overflow: hidden;
+}
+
+#defenseParent {
+  height: 25%;
+  width: 30%;
+  border: 1px solid green;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  background-color: yellow;
+}
+
+#defenseNumber {
+  height: 55%;
+  width: 50%;
+  border: 0px solid green;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin: auto 0 0 auto;
+  text-align: right;
+  font-size: 40px;
+  overflow: hidden;
 }
 
 #controllerRight {
@@ -320,6 +403,7 @@
   top: 200px;
   color: #222224;
   display: none;
+  outline: none;
 }
 
 @-webkit-keyframes spin {
