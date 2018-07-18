@@ -122,6 +122,9 @@ $pokeBlack: #222224;
     font-size: 20px;
     background: linear-gradient(180deg, $pokeRed 50%, $pokeGrey 50%);
     border: 12px solid $pokeBlack;
+    animation: spin;
+    animation-duration: 800ms;
+    animation-iteration-count: 1;
 }
 
 #circle {
@@ -168,6 +171,8 @@ $pokeBlack: #222224;
     margin: auto;
     top: 200px;
     color: $pokeBlack;
+    outline: none;
+    display: none;
 }
 
 #next{
@@ -178,4 +183,16 @@ $pokeBlack: #222224;
     margin: auto;
     top: 200px;
     color: $pokeBlack;
+    display: none;
+}
+
+@keyframes spin {
+    from {
+        transform:rotate(0deg);
+        opacity: 0;
+    }
+    to {
+        transform:rotate(360deg);
+        opacity: 1;
+    }
 }

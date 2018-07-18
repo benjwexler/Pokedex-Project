@@ -234,6 +234,12 @@
   background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, #ee1515), color-stop(50%, #f0f0f0));
   background: linear-gradient(180deg, #ee1515 50%, #f0f0f0 50%);
   border: 12px solid #222224;
+  -webkit-animation: spin;
+          animation: spin;
+  -webkit-animation-duration: 800ms;
+          animation-duration: 800ms;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
 }
 
 #circle {
@@ -301,6 +307,8 @@
   margin: auto;
   top: 200px;
   color: #222224;
+  outline: none;
+  display: none;
 }
 
 #next {
@@ -311,5 +319,32 @@
   margin: auto;
   top: 200px;
   color: #222224;
+  display: none;
+}
+
+@-webkit-keyframes spin {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+    opacity: 1;
+  }
+}
+
+@keyframes spin {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+    opacity: 1;
+  }
 }
 /*# sourceMappingURL=pokemonSwitch.css.map */
