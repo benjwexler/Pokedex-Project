@@ -1,16 +1,23 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Page Title</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="pokemonSwitch.css" />
-    
+
 </head>
+
 <body>
     <div id="boss">
-        <div id="controllerLeft"></div>
+        <div id="controllerLeft">
+            <div id="sliderLeftContainer">
+                <button id="prev"> &#8249</button>
+
+            </div>
+        </div>
         <div id="mainScreenParent">
             <div id="mainScreenBorder">
                 <div id="screen">
@@ -40,11 +47,17 @@
                 </div>
             </div>
         </div>
-        <div id="controllerRight"></div>
+        <div id="controllerRight">
+            <div id="sliderRightContainer">
+                <button id="next"> &#8250</button>
+
+            </div>
+        </div>
     </div>
     <button id="start" onclick="initiate()">
         <div id="circle"></div>
     </button>
     <script src="pokemonSwitch.js"></script>
 </body>
+
 </html>

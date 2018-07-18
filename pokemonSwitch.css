@@ -268,4 +268,48 @@
     opacity: .9;
   }
 }
+
+#sliderLeftContainer {
+  height: 50%;
+  width: 50%;
+  margin: auto;
+  border: 0px solid black;
+  font-size: 100px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+
+#sliderRightContainer {
+  height: 50%;
+  width: 50%;
+  margin: auto;
+  border: 0px solid black;
+  font-size: 100px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+
+#prev {
+  font-size: 200px;
+  background-color: #00c3e3;
+  border: #00c3e3;
+  text-align: center;
+  margin: auto;
+  top: 200px;
+  color: #222224;
+}
+
+#next {
+  font-size: 200px;
+  background-color: #ff4554;
+  border: #00c3e3;
+  text-align: center;
+  margin: auto;
+  top: 200px;
+  color: #222224;
+}
 /*# sourceMappingURL=pokemonSwitch.css.map */

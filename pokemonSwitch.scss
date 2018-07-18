@@ -139,3 +139,43 @@ $pokeBlack: #222224;
     50%  {opacity: .6;}
     100% {opacity: .9;}
 }
+
+#sliderLeftContainer {
+    height: 50%;
+    width: 50%;
+    margin: auto;
+    border: 0px solid black;
+    font-size: 100px;
+    justify-content: center;
+    text-align: center;
+}
+
+#sliderRightContainer {
+    height: 50%;
+    width: 50%;
+    margin: auto;
+    border: 0px solid black;
+    font-size: 100px;
+    justify-content: center;
+    text-align: center;
+}
+
+#prev{
+    font-size: 200px;
+    background-color: $joyconBlue;
+    border: $joyconBlue;
+    text-align: center;
+    margin: auto;
+    top: 200px;
+    color: $pokeBlack;
+}
+
+#next{
+    font-size: 200px;
+    background-color: $joyconRed;
+    border: $joyconBlue;
+    text-align: center;
+    margin: auto;
+    top: 200px;
+    color: $pokeBlack;
+}
