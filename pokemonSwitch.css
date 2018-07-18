@@ -137,8 +137,9 @@
       -ms-flex-pack: center;
           justify-content: center;
   font-size: 26px;
-  font-family: Pokemon Hollow;
-  color: #989898;
+  font-family: Pokemon Solid;
+  color: #222224;
+  letter-spacing: 20px;
 }
 
 #imageAndSkillsContainer {

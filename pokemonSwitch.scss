@@ -96,8 +96,14 @@ $backgroundUrl: "https://stmed.net/sites/default/files/white-wallpapers-25354-25
     margin: auto;
     justify-content: center;
     font-size: 26px;
-    font-family: Pokemon Hollow;
-    color: $joyconGrey;
+    font-family: Pokemon Solid;
+    // color: #64D364;
+    color: $pokeBlack;
+    // color: white;
+    // background-color: $joyconGrey;
+    letter-spacing: 20px;
+    // border-radius: 50%;
+    // font-style: italic;
 }
 
 #imageAndSkillsContainer {
@@ -122,6 +128,7 @@ $backgroundUrl: "https://stmed.net/sites/default/files/white-wallpapers-25354-25
 .threeCol {
     @include flexContainer(20%, 100%, 1px solid green, row);
     font-family: Pokemon Solid;
+    // border-bottom: 0px solid green;
 }
 
 #abilitiesContainer {
