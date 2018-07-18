@@ -9,10 +9,16 @@ $switchWhite: #ffffff;
     box-sizing: border-box;
 }
 
+#btn {
+    height: 50px;
+    width: 50px;
+    
+}
+
 #boss {
     @include flexContainer(600px, 80%, 0px solid green, row);
     // @include flexContainer(600px, 1200px, 0px solid green, row);
-    margin: auto;
+    margin: 80px auto auto auto;
     justify-content: center;
 }
 
@@ -21,27 +27,35 @@ $switchWhite: #ffffff;
     background-color: $joyconBlue;
     border-top-left-radius: 200px 80px;
     border-bottom-left-radius: 200px 80px;
+    box-shadow: 0px -10px rgba(34, 33, 33, 0.945);
 }
 
 #mainScreenParent {
     @include flexContainer(100%, 68%, 0px solid green, row);
     background-color: $joyconGrey;
-    // display: none;
-    border-radius: .1%
+    display: none;
+    border-radius: .2%;
+    justify-content: center;
+    opacity: .9;
     
 }
 
 #mainScreenBorder {
     @include flexContainer(95%, 95%, 0px solid green, row);
     background-color: black; 
-    margin: auto;
     border-radius: 5%;
+    margin: 13px auto auto auto;
+    opacity: 1;
+    // box-shadow: 5px 10px rgb(34, 33, 33);
+    
+    
 }
 
 #screen{
     @include flexContainer(90%, 88%, 0px solid green, column);
     background-color: $switchWhite;
     margin: auto; 
+    border-radius: 1%;
 }
 
 #header {
@@ -63,6 +77,11 @@ $switchWhite: #ffffff;
     margin-left: 5%;
 }
 
+#image {
+    height: 100%;
+    width: 100%;
+}
+
 #skillsParent{
     @include flexContainer(100%, 30%, 1px solid green, column);
     margin-right: 5%;
@@ -72,9 +91,29 @@ $switchWhite: #ffffff;
     @include flexContainer(20%, 100%, 1px solid green, row);
 }
 
+#hpParent {
+    @include flexContainer(25%, 20%, 1px solid green, row); 
+}
+
 #controllerRight{
     @include flexContainer(100%, 16%, 0px solid green, row);
     background-color: $joyconRed;
     border-top-right-radius: 200px 80px;
     border-bottom-right-radius: 200px 80px;
+    box-shadow: 0px -10px rgba(34, 33, 33, 0.945);
+}
+
+#start {
+    position: absolute;
+    top: 200px;
+    left: 37.5%;
+    width: 25%;
+    height: 350px;
+    border-radius: 50%;
+    // border-bottom: 10px solid black;
+    font-size: 20px;
+}
+
+@keyframes {
+    
 }
