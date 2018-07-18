@@ -1,6 +1,6 @@
 // const multiplyES6 = (x, y) => { return x * y };
 
-let percentAdded = 20
+let percentAdded = 22
 
 let initiate = () => {
     let mainScreenParent = document.getElementById("mainScreenParent");
