@@ -1,4 +1,4 @@
-let percentAdded = 22;
+let percentAdded = 23;
 
 let initiate = () => {
     let mainScreenParent = document.getElementById("mainScreenParent");
@@ -75,11 +75,11 @@ class Trainer {
 
 let ben = new Trainer();
 
-// let nameOfPokemon = "charizard";
+let nameOfPokemon = "jigglypuff";
 
 // link = "https://pokeapi.co/api/v2/pokemon/" + nameOfPokemon;
 
-link = "https://pokeapi-nycda.firebaseio.com/pokemon/25.json"
+link = "https://pokeapi-nycda.firebaseio.com/pokemon/39.json"
 
 function changePoke(link) {
     axios.get(link).then((response) => {
@@ -160,13 +160,13 @@ function changePoke(link) {
 
 changePoke(link);
 
-nameOfPokemon = "jigglypuff"
-link = "https://pokeapi-nycda.firebaseio.com/pokemon/149.json"
-// link = "https://pokeapi.co/api/v2/pokemon/" + nameOfPokemon;
+nameOfPokemon = "charizard"
+link = "https://pokeapi-nycda.firebaseio.com/pokemon/6.json"
+link = "https://pokeapi.co/api/v2/pokemon/" + nameOfPokemon;
 changePoke(link);
 
 nameOfPokemon = "pikachu"
-link = "https://pokeapi-nycda.firebaseio.com/pokemon/59.json"
+link = "https://pokeapi-nycda.firebaseio.com/pokemon/25.json"
 // link = "https://pokeapi.co/api/v2/pokemon/" + nameOfPokemon;
 setTimeout(changePoke(link), 7500);
 
