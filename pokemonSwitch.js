@@ -188,7 +188,7 @@ function slideNext(){
     hpNumber.innerText=ben.all()[i].hp;
     attackNumber.innerText=ben.all()[i].attack;
     defenseNumber.innerText=ben.all()[i].defense;
-    modyBody.innerText=((ben.all()[i].abilities).join(", "))
+    modyBody.innerText=((ben.all()[i].abilities).join(", "));
     // talents.innerText = 
 
     // console.log((ben.all()[i].abilities).toString())
@@ -233,6 +233,7 @@ function slidePrev(){
     hpNumber.innerText=ben.all()[i].hp;
     attackNumber.innerText=ben.all()[i].attack;
     defenseNumber.innerText=ben.all()[i].defense;
+    modyBody.innerText=((ben.all()[i].abilities).join(", "));
     // talents.innerText = (ben.all()[i].abilities).toString()
 
     let hpBar = document.getElementById("hpParent");
@@ -247,16 +248,16 @@ let attackBar = document.getElementById("attackParent");
     let defenseNumberText = defenseNumber.innerText
     defenseBar.style.width = ((defenseNumberText/230)*100)+percentAdded + "%"
     
-}
+};
 
 // let hpBar = document.getElementById("hpParent");
 // let hpNumberText = hpNumber.innerText
 // hpBar.style.width = ((hpNumberText/255)*100) + "%"
-let abilitiesContainer = document.getElementById("abilitiesContainer");
+// let abilitiesContainer = document.getElementById("abilitiesContainer");
 
-function displayAbilities() {
-    abilitiesContainer .style.display="inline";
-};
+// function displayAbilities() {
+//     abilitiesContainer .style.display="inline";
+// };
 
 // let prev = document.getElementById("prev");
 window.addEventListener("keyup", function(event) {
