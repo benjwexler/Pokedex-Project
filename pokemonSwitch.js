@@ -11,7 +11,23 @@ let initiate = () => {
     prev.style.display="inline";
     let next=document.getElementById("next");
     next.style.display="inline";
+    let modal = document.getElementById("firstModal");
+    // modal.style.display="block";
+    // modal.style.left="13.65%";
+    modal.style.zIndex=1;
+    let modyButton = document.getElementById("modyButton");
+    // modyButton.removeAttribute("id")
+    // modyButton.style.backgroundColor="red";
 }
+
+let fake = document.getElementById("fake");
+fake.addEventListener("click", function(event) {
+    event.preventDefault();
+    document.getElementById("modyButton").click();
+    // if (event.keyCode === 13) {
+    //     document.getElementById("myBtn").click();
+    // }
+});
 
 setTimeout(initiate, 1200);
 
