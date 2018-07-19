@@ -57,7 +57,7 @@ let nameOfPokemon = "charizard";
 
 link = "https://pokeapi.co/api/v2/pokemon/" + nameOfPokemon;
 
-// link = "https://pokeapi-nycda.firebaseio.com/pokemon/25.json"
+link = "https://pokeapi-nycda.firebaseio.com/pokemon/25.json"
 
 function changePoke(link) {
     axios.get(link).then((response) => {
@@ -115,8 +115,8 @@ function changePoke(link) {
         // name.innerText=ben.get(nameOfPokemon).name;
 
 
-        talents.innerText=(ben.get(nameOfPokemon).abilities).toString()
-        // talents.innerText="blah"
+        // talents.innerText=(ben.get(nameOfPokemon).abilities).toString()
+    
 
         let hpBar = document.getElementById("hpParent");
         let hpNumberText = hpNumber.innerText
@@ -138,13 +138,13 @@ function changePoke(link) {
 changePoke(link);
 
 nameOfPokemon = "jigglypuff"
-// link = "https://pokeapi-nycda.firebaseio.com/pokemon/149.json"
-link = "https://pokeapi.co/api/v2/pokemon/" + nameOfPokemon;
+link = "https://pokeapi-nycda.firebaseio.com/pokemon/149.json"
+// link = "https://pokeapi.co/api/v2/pokemon/" + nameOfPokemon;
 changePoke(link);
 
 nameOfPokemon = "pikachu"
-// link = "https://pokeapi-nycda.firebaseio.com/pokemon/59.json"
-link = "https://pokeapi.co/api/v2/pokemon/" + nameOfPokemon;
+link = "https://pokeapi-nycda.firebaseio.com/pokemon/59.json"
+// link = "https://pokeapi.co/api/v2/pokemon/" + nameOfPokemon;
 setTimeout(changePoke(link), 7500);
 
 setTimeout(ben.all(), 1000);
@@ -173,7 +173,7 @@ function slideNext(){
     hpNumber.innerText=ben.all()[i].hp;
     attackNumber.innerText=ben.all()[i].attack;
     defenseNumber.innerText=ben.all()[i].defense;
-    talents.innerText = ((ben.all()[i].abilities).join(", "))
+    // talents.innerText = ((ben.all()[i].abilities).join(", "))
 
     // console.log((ben.all()[i].abilities).toString())
     
@@ -217,8 +217,7 @@ function slidePrev(){
     hpNumber.innerText=ben.all()[i].hp;
     attackNumber.innerText=ben.all()[i].attack;
     defenseNumber.innerText=ben.all()[i].defense;
-    // let talents = document.getElementById("arrayOfSkills");
-    talents.innerText = (ben.all()[i].abilities).toString()
+    // talents.innerText = (ben.all()[i].abilities).toString()
 
     let hpBar = document.getElementById("hpParent");
 let hpNumberText = hpNumber.innerText

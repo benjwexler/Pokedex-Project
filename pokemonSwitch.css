@@ -8,6 +8,52 @@
   width: 50px;
 }
 
+.modal {
+  width: 42%;
+  margin: auto;
+}
+
+.modal-content {
+  top: 144px;
+  height: 420px;
+  border-radius: 1%;
+}
+
+#firstModal {
+  height: auto;
+  width: 100%;
+  border: 0px solid green;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  position: absolute;
+  top: 480px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  left: 13.65%;
+  display: none;
+}
+
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1040;
+  background-color: white;
+  background-color: transparent;
+}
+
+.modal-backdrop.in {
+  opacity: 2;
+}
+
 #boss {
   height: 600px;
   width: 80%;
