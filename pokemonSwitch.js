@@ -256,5 +256,16 @@ let abilitiesContainer = document.getElementById("abilitiesContainer");
 
 function displayAbilities() {
     abilitiesContainer .style.display="inline";
-}
+};
 
+// let prev = document.getElementById("prev");
+window.addEventListener("keyup", function(event) {
+    event.preventDefault();
+    if (event.keyCode === 37) {
+        document.getElementById("prev").click();
+    }
+    
+    if (event.keyCode === 39) {
+        document.getElementById("next").click();
+    }
+});
