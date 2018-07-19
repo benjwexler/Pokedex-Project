@@ -67,6 +67,11 @@
   color: #f85d6a;
 }
 
+#closeButton {
+  letter-spacing: 3px;
+  background-color: #00c3e3;
+}
+
 #fake {
   height: 40%;
   width: 100%;

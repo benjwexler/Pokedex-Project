@@ -138,6 +138,11 @@ $backgroundUrl: "https://stmed.net/sites/default/files/white-wallpapers-25354-25
     color: #f85d6a;
 }
 
+#closeButton {
+    letter-spacing: 3px;
+    background-color: $joyconBlue;
+}
+
 #fake {
     @include flexContainer(40%, 100%, 0px solid red, row);
     outline: none; 
