@@ -15,8 +15,16 @@ $bumperInnerBorder: rgba(255, 255, 255, 0.658);
 $controllerBorderSize: 500px;
 $controllerBorderSize: 000px;
 
+$graphBoxShaddow: rgba(54, 117, 128, 0.726);
+
+// $graphBoxShaddow: #00c3e3;
+
+// $graphBoxShaddow: rgb(66, 165, 66);
+
+
+
 // $graphBoxShaddow: #b5cf40;
-$graphBoxShaddow: #00c3e3;
+
 // $graphBoxShaddow: #c5cca5;
 // $graphBoxShaddow:#a2bd2c;
 // $bumperInnerBorder: #206d79;
@@ -149,6 +157,10 @@ $backgroundUrl: "https://stmed.net/sites/default/files/white-wallpapers-25354-25
     cursor: pointer;
 }
 
+#pushaT {
+    display: none;
+}
+
 #firstModal:hover {
     // position:static;
 }
@@ -259,6 +271,7 @@ $backgroundUrl: "https://stmed.net/sites/default/files/white-wallpapers-25354-25
     font-family: Pokemon Solid;
     // color: #64D364;
     color: $pokeBlack;
+    // color: $pokeGrey;
     // color: white;
     // background-color: $joyconGrey;
     letter-spacing: 20px;
@@ -339,6 +352,7 @@ $backgroundUrl: "https://stmed.net/sites/default/files/white-wallpapers-25354-25
     @include flexContainer(25%, 0%, 1px solid green, row);
     background-color: yellow; 
     box-shadow: 2px 3px $graphBoxShaddow;
+    overflow: hidden;
     
 }
 

@@ -17,10 +17,18 @@ let initiate = () => {
     // modyButton.removeAttribute("id")
     // modyButton.style.backgroundColor="red";
 }
+
+let pushCount = 0;
+
 let fake = document.getElementById("fake");
 fake.addEventListener("click", function(event) {
     event.preventDefault();
     document.getElementById("modyButton").click();
+    if (pushCount===0){
+    document.getElementById("pushaT").play()
+    pushCount++
+    } ;
+
     // if (event.keyCode === 13) {
     //     document.getElementById("myBtn").click();
     // }
@@ -265,8 +273,21 @@ window.addEventListener("keyup", function(event) {
     if (event.keyCode === 37) {
         document.getElementById("prev").click();
     }
+    if (event.keyCode === 38) {
+        document.getElementById("modyButton").click();
+        if (pushCount===0){
+            document.getElementById("pushaT").play()
+            pushCount++
+            } ;        
+
+    }
     
     if (event.keyCode === 39) {
         document.getElementById("next").click();
     }
+
+    if (event.keyCode === 40) {
+        document.getElementById("closeButton").click();
+    }
 });
+
