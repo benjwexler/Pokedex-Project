@@ -9,6 +9,8 @@ $pokeRed: #ee1515;
 $pokeGrey: #f0f0f0;
 $pokeBlack: #222224;
 
+$purple: #bd20f1;
+
 $bumperInnerBorder: rgba(255, 255, 255, 0.658);
 $controllerBorderSize: 500px;
 $controllerBorderSize: 000px;
@@ -116,6 +118,24 @@ $backgroundUrl: "https://stmed.net/sites/default/files/white-wallpapers-25354-25
     // letter-spacing: 50px;
     // display: hidden;
     // z-index: -99;
+    font-family: Pokemon Solid;
+    letter-spacing: 10px;
+    font-size: 30px;
+    // color: #8e6ad1;
+    // color: rgb(91, 139, 77);
+    color: $pokeGrey;
+    // color: #8bd16a;
+    text-shadow:
+		-1px -1px 0 #000,
+		1px -1px 0 #000,
+		-1px 1px 0 #000,
+		1px 1px 0 #000;
+}
+
+.modal-title {
+    font-family: Pokemon Solid;
+    letter-spacing: 5px;
+    color: #f85d6a;
 }
 
 #fake {
@@ -239,6 +259,11 @@ $backgroundUrl: "https://stmed.net/sites/default/files/white-wallpapers-25354-25
     letter-spacing: 20px;
     // border-radius: 50%;
     // font-style: italic;
+    text-shadow:
+		-1px -1px 0 $joyconGrey,
+		1px -1px 0 $joyconGrey,
+		-1px 1px 0 $joyconGrey,
+		3px .5px 0 $joyconGrey;
 }
 
 #imageAndSkillsContainer {

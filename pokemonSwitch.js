@@ -130,7 +130,8 @@ function changePoke(link) {
 
 
         // talents.innerText=(ben.get(nameOfPokemon).abilities).toString()
-        modyBody.innerText=(ben.get(nameOfPokemon).abilities).toString()
+        // modyBody.innerText=((ben.all()[i].abilities).join(", "))
+        modyBody.innerText=(ben.get(nameOfPokemon).abilities).join(", ");
 
         let hpBar = document.getElementById("hpParent");
         let hpNumberText = hpNumber.innerText

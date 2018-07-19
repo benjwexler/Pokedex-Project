@@ -54,6 +54,17 @@
       -ms-flex-pack: center;
           justify-content: center;
   left: 13.65%;
+  font-family: Pokemon Solid;
+  letter-spacing: 10px;
+  font-size: 30px;
+  color: #f0f0f0;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+.modal-title {
+  font-family: Pokemon Solid;
+  letter-spacing: 5px;
+  color: #f85d6a;
 }
 
 #fake {
@@ -204,6 +215,7 @@
   font-family: Pokemon Solid;
   color: #222224;
   letter-spacing: 20px;
+  text-shadow: -1px -1px 0 #989898, 1px -1px 0 #989898, -1px 1px 0 #989898, 3px 0.5px 0 #989898;
 }
 
 #imageAndSkillsContainer {
