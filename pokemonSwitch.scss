@@ -9,6 +9,16 @@ $pokeRed: #ee1515;
 $pokeGrey: #f0f0f0;
 $pokeBlack: #222224;
 
+$bumperInnerBorder: rgba(255, 255, 255, 0.658);
+$controllerBorderSize: 500px;
+$controllerBorderSize: 000px;
+
+// $graphBoxShaddow: #b5cf40;
+$graphBoxShaddow: #00c3e3;
+// $graphBoxShaddow: #c5cca5;
+// $graphBoxShaddow:#a2bd2c;
+// $bumperInnerBorder: #206d79;
+
 // $backgroundUrl: "https://bestwallpapers.co/wp-content/uploads/2018/05/wallpaper-design-awards-application-for-home-singapore-designs.jpg";
 
 $backgroundUrl: "https://stmed.net/sites/default/files/white-wallpapers-25354-2505529.jpg";
@@ -32,6 +42,10 @@ $backgroundUrl: "https://stmed.net/sites/default/files/white-wallpapers-25354-25
     width: 50px;
     
 }
+
+// #body {
+//     cursor: progress;
+// }
 
 
 .btn-primary {
@@ -107,6 +121,7 @@ $backgroundUrl: "https://stmed.net/sites/default/files/white-wallpapers-25354-25
 #fake {
     @include flexContainer(40%, 100%, 0px solid red, row);
     outline: none; 
+    cursor: pointer;
 }
 
 #firstModal:hover {
@@ -167,11 +182,13 @@ $backgroundUrl: "https://stmed.net/sites/default/files/white-wallpapers-25354-25
 }
 
 #controllerLeft{
-    @include flexContainer(100%, 16%, 0px solid green, row);
+    @include flexContainer(100%, 16%, 0px solid rgba(0, 9, 128, 0.527), row);
     background-color: $joyconBlue;
     border-top-left-radius: 200px 80px;
     border-bottom-left-radius: 200px 80px;
     box-shadow: 0px -10px rgba(34, 33, 33, 0.945);
+    border-top: $controllerBorderSize solid $bumperInnerBorder;
+    // border-left: 0px solid black;
     
 }
 
@@ -277,7 +294,7 @@ $backgroundUrl: "https://stmed.net/sites/default/files/white-wallpapers-25354-25
 #hpParent {
     @include flexContainer(25%, 00%, 1px solid green, row);
     background-color: yellow; 
-    box-shadow: 2px 2px $joyconBlue;
+    box-shadow: 2px 2px $graphBoxShaddow;
 }
 
 #hpNumber {
@@ -286,12 +303,12 @@ $backgroundUrl: "https://stmed.net/sites/default/files/white-wallpapers-25354-25
     text-align: right;
     font-size: 40px;
     overflow: hidden;
-}
+} 
 
 #attackParent {
     @include flexContainer(25%, 0%, 1px solid green, row);
     background-color: yellow; 
-    box-shadow: 2px 3px $joyconBlue;
+    box-shadow: 2px 3px $graphBoxShaddow;
     
 }
 
@@ -306,7 +323,7 @@ $backgroundUrl: "https://stmed.net/sites/default/files/white-wallpapers-25354-25
 #defenseParent {
     @include flexContainer(25%, 00%, 1px solid green, row);
     background-color: yellow; 
-    box-shadow: 2px 2px $joyconBlue;
+    box-shadow: 2px 2px $graphBoxShaddow;
     
 }
 
@@ -325,6 +342,7 @@ $backgroundUrl: "https://stmed.net/sites/default/files/white-wallpapers-25354-25
     border-top-right-radius: 200px 80px;
     border-bottom-right-radius: 200px 80px;
     box-shadow: 0px -10px rgba(34, 33, 33, 0.945);
+    border-top: $controllerBorderSize solid $bumperInnerBorder;
 }
 
 #start {
