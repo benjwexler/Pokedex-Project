@@ -32,6 +32,26 @@ $backgroundUrl: "https://stmed.net/sites/default/files/white-wallpapers-25354-25
     width: 50px;
     
 }
+
+
+.btn-primary {
+    color: #fff;
+    background-color: white;
+    border-color: white;
+    cursor: default;
+}
+
+.btn-primary:hover {
+    color: #fff;
+    background-color: white;
+    border-color: white;
+    cursor: default;
+}
+
+.btn-primary.focus, .btn-primary:focus {
+    box-shadow: 0 0 0 0 white
+}
+
 .modal {
 
     // fits width of inner inner screen
@@ -69,7 +89,8 @@ $backgroundUrl: "https://stmed.net/sites/default/files/white-wallpapers-25354-25
 // }
 
 #firstModal {
-    @include flexContainer(auto, 100%, 0px solid green, row);
+    // @include flexContainer(auto, 100%, 0px solid green, row);
+    @include flexContainer(0px, 0px, 0px solid green, row);
     // margin: auto;
     // position: absolute;
     top: 480px;
@@ -84,7 +105,8 @@ $backgroundUrl: "https://stmed.net/sites/default/files/white-wallpapers-25354-25
 }
 
 #fake {
-    @include flexContainer(40%, 100%, 2px solid red, row); 
+    @include flexContainer(40%, 100%, 0px solid red, row);
+    outline: none; 
 }
 
 #firstModal:hover {
@@ -167,7 +189,7 @@ $backgroundUrl: "https://stmed.net/sites/default/files/white-wallpapers-25354-25
 }
 
 #mainScreenBorder {
-    @include flexContainer(95%, 95%, 0px solid green, row);
+    @include flexContainer(95%, 95%, 0px dashed rgba(255, 0, 0, 0.534), row);
     background-color: black; 
     border-radius: 5%;
     margin: 13px auto auto auto;
@@ -178,7 +200,7 @@ $backgroundUrl: "https://stmed.net/sites/default/files/white-wallpapers-25354-25
 }
 
 #screen{
-    @include flexContainer(90%, 88%, 0px dashed $joyconGrey, column);
+    @include flexContainer(90%, 88%, 0px dashed rgba(85, 69, 69, 0.534), column);
     background-color: $switchWhite;
     margin: auto; 
     border-radius: 1%;
@@ -255,6 +277,7 @@ $backgroundUrl: "https://stmed.net/sites/default/files/white-wallpapers-25354-25
 #hpParent {
     @include flexContainer(25%, 00%, 1px solid green, row);
     background-color: yellow; 
+    box-shadow: 2px 2px $joyconBlue;
 }
 
 #hpNumber {
@@ -268,6 +291,7 @@ $backgroundUrl: "https://stmed.net/sites/default/files/white-wallpapers-25354-25
 #attackParent {
     @include flexContainer(25%, 0%, 1px solid green, row);
     background-color: yellow; 
+    box-shadow: 2px 3px $joyconBlue;
     
 }
 
@@ -282,6 +306,7 @@ $backgroundUrl: "https://stmed.net/sites/default/files/white-wallpapers-25354-25
 #defenseParent {
     @include flexContainer(25%, 00%, 1px solid green, row);
     background-color: yellow; 
+    box-shadow: 2px 2px $joyconBlue;
     
 }
 

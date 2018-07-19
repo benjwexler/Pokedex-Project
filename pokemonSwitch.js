@@ -1,6 +1,4 @@
-// const multiplyES6 = (x, y) => { return x * y };
-
-let percentAdded = 22
+let percentAdded = 22;
 
 let initiate = () => {
     let mainScreenParent = document.getElementById("mainScreenParent");
@@ -11,15 +9,14 @@ let initiate = () => {
     prev.style.display="inline";
     let next=document.getElementById("next");
     next.style.display="inline";
-    let modal = document.getElementById("firstModal");
+    // let modal = document.getElementById("firstModal");
     // modal.style.display="block";
     // modal.style.left="13.65%";
-    modal.style.zIndex=1;
-    let modyButton = document.getElementById("modyButton");
+    // modal.style.zIndex=1;
+    // let modyButton = document.getElementById("modyButton");
     // modyButton.removeAttribute("id")
     // modyButton.style.backgroundColor="red";
 }
-
 let fake = document.getElementById("fake");
 fake.addEventListener("click", function(event) {
     event.preventDefault();
@@ -37,6 +34,7 @@ let defenseNumber = document.getElementById("defenseNumber");
 let name = document.getElementById("name");
 let talents = document.getElementById("listOfAbilities");
 let image= document.getElementById("image");
+let modyBody=document.getElementById("modyBody");
 
 class Pokemon {
     constructor(name, hp, attack, defense, abilities, picUrl) {
@@ -69,9 +67,9 @@ class Trainer {
 
 let ben = new Trainer();
 
-let nameOfPokemon = "charizard";
+// let nameOfPokemon = "charizard";
 
-link = "https://pokeapi.co/api/v2/pokemon/" + nameOfPokemon;
+// link = "https://pokeapi.co/api/v2/pokemon/" + nameOfPokemon;
 
 link = "https://pokeapi-nycda.firebaseio.com/pokemon/25.json"
 
@@ -132,7 +130,7 @@ function changePoke(link) {
 
 
         // talents.innerText=(ben.get(nameOfPokemon).abilities).toString()
-    
+        modyBody.innerText=(ben.get(nameOfPokemon).abilities).toString()
 
         let hpBar = document.getElementById("hpParent");
         let hpNumberText = hpNumber.innerText
@@ -189,7 +187,8 @@ function slideNext(){
     hpNumber.innerText=ben.all()[i].hp;
     attackNumber.innerText=ben.all()[i].attack;
     defenseNumber.innerText=ben.all()[i].defense;
-    // talents.innerText = ((ben.all()[i].abilities).join(", "))
+    modyBody.innerText=((ben.all()[i].abilities).join(", "))
+    // talents.innerText = 
 
     // console.log((ben.all()[i].abilities).toString())
     
