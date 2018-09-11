@@ -1,10 +1,12 @@
+<h3> Pokemon Switch - NYCDA Web Dev Fellowship Class Project </h3>
+
 <img src="PokemonSwitchScreenShot.png">
 
 Hey, I created a simple layout to model the Nintendo Switch where you can toggle through Pokemon and see their respective information.
 
 You can use either your mouse or the arrow keys on your computer keyboard to toggle through the different Pokemon.
 
-<h3> NYCDA Web Dev Fellowship Class Project </h3>
+
 
 <h3> Class project prompt </h3>
 
