@@ -9,7 +9,7 @@ You can use either your mouse or the arrow keys on your computer keyboard to tog
 
 <h3> Class project prompt </h3>
 
-Create a Personal Pokedex of 3 Pokemon that retrieves each Pokemon's stats based off of the Pokemon API
+Create a Personal Pokedex of 3 Pokemon that retrieves each Pokemon's stats based using the Pokemon API
 
 <h3> Built with: </h3>
 
