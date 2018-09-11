@@ -1,4 +1,4 @@
-# pokemon
+<img src="pokemonSwitchScreenshot.png">
 
 Hey, I created a simple layout to model the Nintendo Switch where you can toggle through Pokemon and see their respective information.
 
