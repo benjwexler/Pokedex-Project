@@ -219,6 +219,8 @@ $backgroundUrl: "https://stmed.net/sites/default/files/white-wallpapers-25354-25
     // margin: 180px auto auto auto;
     margin: 80px auto auto auto;
     justify-content: center;
+    max-width: 1250px; 
+    min-width: 1000px;
     // overflow: hidden;
 }
 
@@ -362,7 +364,7 @@ $backgroundUrl: "https://stmed.net/sites/default/files/white-wallpapers-25354-25
     @include flexContainer(25%, 0%, 1px solid green, row);
     background-color: yellow; 
     box-shadow: 2px 3px $graphBoxShaddow;
-    overflow: hidden;
+    // overflow: hidden;
     
 }
 

@@ -161,15 +161,15 @@ function changePoke(link) {
 changePoke(link);
 
 nameOfPokemon = "charizard"
-link = "https://pokeapi-nycda.firebaseio.com/pokemon/6.json"
+// link = "https://pokeapi-nycda.firebaseio.com/pokemon/6.json"
 link = "https://pokeapi.co/api/v2/pokemon/" + nameOfPokemon;
 changePoke(link);
 
 nameOfPokemon = "pikachu"
-link = "https://pokeapi-nycda.firebaseio.com/pokemon/25.json"
-// link = "https://pokeapi.co/api/v2/pokemon/" + nameOfPokemon;
-setTimeout(changePoke(link), 7500);
-
+// link = "https://pokeapi-nycda.firebaseio.com/pokemon/25.json"
+link = "https://pokeapi.co/api/v2/pokemon/" + nameOfPokemon;
+// setTimeout(changePoke(link), 7500);
+changePoke(link);
 setTimeout(ben.all(), 1000);
 
 i=0
