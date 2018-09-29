@@ -1,5 +1,7 @@
 let percentAdded = 23;
 
+console.log("Hi")
+
 let initiate = () => {
     let mainScreenParent = document.getElementById("mainScreenParent");
     mainScreenParent.style.display="inline";
